@@ -26,14 +26,32 @@ public class Main {
         //Deal one card to start and then get to 7
         //How do we get computer’s guess (random int?)
         //Guess what user asked for first, then random
+        System.out.println("Welcome to GoFish");
         Deck testDeck = new Deck();
         Hand testHand = new Hand();
+        Player newPlayer = new Player();
+        Opponent newOpponent = new Opponent();
+
         testDeck.buildDeck(); //call method, is there a way to remove this step? such as call new Deck and it builds
 //        System.out.println(abc.toString());
         testDeck.shuffle();
-        testHand.takeCardFromDeck(testDeck);
-        testHand.takeCardFromDeck(testDeck);
-        System.out.println(testHand.toString());
+        newPlayer.getHand().takeCardFromDeck(testDeck);
+        newPlayer.getHand().takeCardFromDeck(testDeck);
+        newPlayer.getHand().takeCardFromDeck(testDeck);
+        newPlayer.getHand().takeCardFromDeck(testDeck);
+        newPlayer.getHand().takeCardFromDeck(testDeck);
+        newPlayer.getHand().takeCardFromDeck(testDeck);
+        newPlayer.getHand().takeCardFromDeck(testDeck);
+        newOpponent.getHand().takeCardFromDeck(testDeck);
+        newOpponent.getHand().takeCardFromDeck(testDeck);
+        newOpponent.getHand().takeCardFromDeck(testDeck);
+        newOpponent.getHand().takeCardFromDeck(testDeck);
+        newOpponent.getHand().takeCardFromDeck(testDeck);
+        newOpponent.getHand().takeCardFromDeck(testDeck);
+        newOpponent.getHand().takeCardFromDeck(testDeck);
+        newPlayer.printHand();
+        newOpponent.printOpponentHand();
+//        System.out.println(testHand.toString());
         System.out.println(testDeck.toString());
 
     }

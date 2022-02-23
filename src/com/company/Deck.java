@@ -44,7 +44,7 @@ public class Deck {
     }
 
     public Card takeCard() {
-        Card cardToTake = new Card(deck.get(0)); //need to constructor index for get
+        Card cardToTake = deck.get(0);
         deck.remove(0);
         return cardToTake;
     }
